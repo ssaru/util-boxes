@@ -128,7 +128,7 @@ ENV DISPLAY ${display}
 RUN echo "export DISPLAY=unix${display}" >> ~/.bashrc
 RUN echo "display parameter : ${display}"
 
-# attach local storate
+# for attaching local storage
 RUN mkdir /home/${user}/Documents
 
 # start ssh
