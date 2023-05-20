@@ -64,6 +64,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     openssh-server \
     iptables \
     screen \
+    ffmpeg \
     ${ADDITIONAL_PACKAGE} \
     && rm -rf /var/lib/apt/lists/*
 

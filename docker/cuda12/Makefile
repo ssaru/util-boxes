@@ -14,6 +14,7 @@ build:
 
 run:
 	docker run -i -t -d --shm-size=6G --init \
+		-p 8080:7860  \
 		--volume ~/Documents:/home/$(CONTAINER_USERNAME)/Documents:rw \
 		--gpus '"device=0"' \
 		--name $(CONTAINER_NAME) $(IMAGE_NAME)
