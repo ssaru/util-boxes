@@ -65,12 +65,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     iptables \
     screen \
     ffmpeg \
+    python3.8-venv \
+    libgoogle-perftools4 \
+    libtcmalloc-minimal4 \
     ${ADDITIONAL_PACKAGE} \
     && rm -rf /var/lib/apt/lists/*
 
 # pip & pip3 upgrade
-RUN pip3 install --upgrade pip && \
-    pip install --upgrade pip
+RUN python3 -m pip install --upgrade pip && \
+    python3 -m pip install virtualenv
 
 RUN pip3 install numpy pandas jupyter notebook
 
