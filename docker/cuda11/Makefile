@@ -4,8 +4,8 @@ SHELL = /bin/sh
 UID = $(shell id -u)
 GID = $(shell id -g)
 
-IMAGE_NAME = cuda12
-CONTAINER_NAME = cuda12
+IMAGE_NAME = cuda11
+CONTAINER_NAME = cuda11
 CONTAINER_USERNAME = ubuntu
 CONTAINER_PASSWD = ubuntu
 
